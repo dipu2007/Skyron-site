@@ -2,157 +2,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Skyron – India's exclusive limited-edition luxury shoe brand. Crafted in China, made for India. Bold, minimal, elite." />
-  <meta name="keywords" content="Skyron, luxury shoes India, limited edition sneakers, exclusive footwear, Indian luxury brand" />
-  <meta property="og:title" content="Skyron – Limited Edition Luxury Shoes" />
-  <meta property="og:description" content="India’s exclusive luxury shoes. Crafted in China, made for India." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dipu2007.github.io/Skyron-site" />
-  <title>Skyron – Limited Edition Luxury Shoes</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      padding: 40px 10px 10px;
-      font-size: 38px;
-      font-weight: bold;
-      color: gold;
-      letter-spacing: 4px;
-      text-shadow: 0 0 10px gold;
-      animation: fadeInGlow 2.5s ease-out forwards;
-    }
-    .tagline {
-      font-size: 16px;
-      color: #aaa;
-      margin-bottom: 20px;
-    }
-    .highlight {
-      font-size: 22px;
-      margin-top: 10px;
-      color: #f0f0f0;
-      animation: slideUp 2s ease forwards;
-    }
-    .countdown {
-      font-size: 20px;
-      margin: 30px 0;
-      color: #ccc;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .product {
-      background: #111;
-      border-radius: 16px;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
-    }
-    .product h3 {
-      margin: 10px 0 5px;
-      color: #ffd700;
-    }
-    .product p { color: #aaa; }
-    .product button {
-      margin-top: 10px;
-      background: gold;
-      color: black;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .about {
-      margin: 40px auto;
-      max-width: 600px;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #ccc;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 12px;
-      color: #666;
-      border-top: 1px solid #333;
-    }
-    @keyframes fadeInGlow {
-      from { opacity: 0; text-shadow: none; }
-      to { opacity: 1; text-shadow: 0 0 10px gold; }
-    }
-    @keyframes slideUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-  </style>
+  <title>Skyron – Crafted in China, Made for India</title>
+  <meta name="description" content="Skyron premium sneaker drops. Crafted in China, made for India. Countdown to the next limited release and join our wait-list." />
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pO8RO6XQ7Zb7zz+fm3fnfX8YUEBmfXs9X4gkxgKW2TiFqouBZhOiabuX41ZJLdnOjFkNdn+W3X3ENa+Xicr+kw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>SKYRON</header>
-  <div class="tagline">Dream. Dare. Deliver.</div>
-  <div class="highlight">Is this the future of Indian luxury?</div>
-  <div class="countdown" id="countdown"></div>  <section class="products">
-    <div class="product">
-      <h3>SKR-001 White Gold</h3>
-      <p>Minimal White with Gold Stitching</p>
-      <button onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container flex items-center justify-between gap-16">
+      <a href="#home" class="brand-logo">Skyron</a>
+      <nav class="nav-links flex gap-16">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#about" class="nav-link">About Skyron</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#comingsoon" class="nav-link highlight">Coming Soon</a>
+      </nav>
     </div>
-    <div class="product">
-      <h3>SKR-002 Black Flame</h3>
-      <p>Glossy Black with Red Accents</p>
-      <button onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
+  </header>  <!-- HERO SECTION -->  <section id="home" class="hero">
+    <div class="container center">
+      <h1 class="hero-title animate-text">Skyron</h1>
+      <h2 class="hero-tagline">Crafted in China, Made for India</h2>
+      <div class="coming-soon">
+        <p>Coming Soon</p>
+        <span id="countdown" class="countdown-timer"></span>
+      </div>
+      <a href="#products" class="cta-button">Explore Collection</a>
+      <div class="floating-sneakers">
+        <img src="images/sneaker1.webp" alt="Luxury Sneaker" class="sneaker-anim" />
+        <img src="images/sneaker2.webp" alt="Handcrafted Sneaker" class="sneaker-anim" />
+        <img src="images/sneaker3.webp" alt="Limited Edition Sneaker" class="sneaker-anim" />
+      </div>
     </div>
-    <div class="product">
-      <h3>SKR-003 Street Steel</h3>
-      <p>Urban Grey Limited Drop</p>
-      <button onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
+  </section>  <!-- PRODUCTS SECTION -->  <section id="products" class="products-section">
+    <div class="container">
+      <h2 class="section-title">Featured Collection</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="images/venomx-ultra.webp" alt="VenomX Ultra" />
+          <h3>VenomX Ultra</h3>
+          <p>Ultra-light, triple-foam stacked midsole. Made to stun.</p>
+          <span class="price">₹10,400</span>
+        </div>
+        <div class="product-card">
+          <img src="images/stellar-prime.webp" alt="Stellar Prime" />
+          <h3>Stellar Prime</h3>
+          <p>Aerospace mesh, handcrafted finish, all-day luxury feel.</p>
+          <span class="price">₹16,800</span>
+        </div>
+        <div class="product-card">
+          <img src="images/aurora-blaze.webp" alt="Aurora Blaze" />
+          <h3>Aurora Blaze</h3>
+          <p>Glow-fade knit, signature Skyron grip.</p>
+          <span class="price">₹32,200</span>
+        </div>
+        <div class="product-card">
+          <img src="images/titanium-apex.webp" alt="Titanium Apex" />
+          <h3>Titanium Apex</h3>
+          <p>Limited drop, carbon insert, exclusive Indian edition.</p>
+          <span class="price">₹45,000</span>
+        </div>
+        <div class="product-card">
+          <img src="images/nebula-legacy.webp" alt="Nebula Legacy" />
+          <h3>Nebula Legacy</h3>
+          <p>3M accents, full-cushion, next-gen comfort.</p>
+          <span class="price">₹56,000</span>
+        </div>
+      </div>
     </div>
-  </section>  <div class="about">
-    Crafted in China. Designed with elegance. Made for the bold generation of India. At Skyron, we don’t just sell shoes — we create statements. Our designs are exclusive, our drops are rare, and our vision is clear: India deserves its own global shoe icon.
-  </div>  <footer>
-    Skyron® 2025. All Rights Reserved. | Shipping & Returns | Contact via WhatsApp
+  </section>  <!-- ABOUT SKYRON -->  <section id="about" class="about-section">
+    <div class="container two-col">
+      <div>
+        <h2>Mission</h2>
+        <p>Empower Indian sneakerheads with world-class craftsmanship blended with local soul.</p>
+        <h2>Vision</h2>
+        <p>Lead Asia’s luxury streetwear revolution with bold design, ethical supply chains, and fearless community drops.</p>
+      </div>
+      <div>
+        <h2>Our Story</h2>
+        <p>
+          Born in 2025, Skyron fuses Chinese precision manufacturing with India’s cultural vibrance. Every pair is a tribute to creators who dream beyond borders.<br>
+          Crafted in China, Made for India.<br>
+          Premium drops priced ₹10,400 – ₹56,000
+        </p>
+      </div>
+    </div>
+  </section>  <!-- CONTACT US -->  <section id="contact" class="contact-section">
+    <div class="container contact-flex">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email (optional)" />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <a href="https://wa.me/8295914905" class="whatsapp-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+      <div class="contact-info">
+        <h3>Email</h3>
+        <p>support@skyron.com</p>
+        <h3>Message Form</h3>
+        <p>Send us product inquiries or feedback directly through the form.</p>
+      </div>
+    </div>
+  </section>  <!-- COMING SOON -->  <section id="comingsoon" class="comingsoon-section">
+    <div class="container center">
+      <h2>Exclusive Sneaker Launches — Coming Soon</h2>
+      <div class="comingsoon-banner">
+        <p>Stay tuned! Limited drops & community releases are on the way.</p>
+        <span id="comingsoon-countdown" class="countdown-timer"></span>
+      </div>
+    </div>
+  </section>  <footer class="footer center">
+    <p>&copy; 2025 Skyron. Crafted in China, Made for India.</p>
   </footer>  <script>
-    const countdownDate = new Date("Aug 15, 2025 00:00:00").getTime();
-    const x = setInterval(function() {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-      const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const s = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("countdown").innerHTML = `Next Drop: ${d}d ${h}h ${m}m ${s}s`;
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "Drop Live Now!";
+    // Simple Countdown (set to 60 days from now)
+    function updateCountdown(id, daysAhead = 60) {
+      const countdownEl = document.getElementById(id);
+      const endDate = new Date();
+      endDate.setDate(endDate.getDate() + daysAhead);
+
+      function tick() {
+        const now = new Date();
+        const diff = endDate - now;
+        if (diff <= 0) {
+          countdownEl.textContent = 'Launching Soon!';
+          return;
+        }
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((diff / (1000 * 60)) % 60);
+        const secs = Math.floor((diff / 1000) % 60);
+        countdownEl.textContent = days + 'd ' + hours + 'h ' + mins + 'm ' + secs + 's';
+        requestAnimationFrame(tick);
       }
-    }, 1000);
+      tick();
+    }
+    updateCountdown('countdown');
+    updateCountdown('comingsoon-countdown', 90);
   </script></body>
 </html>
-</section>
-<section id="products" class="products">
-  <div class="product">
-    <h3>SKR-001 White Gold</h3>
-    <p>This elegant sneaker combines pristine white leather with exquisite gold thread accents, creating a sophisticated look that stands out with subtle luxury. The soft cushioned insole offers all-day comfort, while the durable rubber sole provides excellent grip. Perfect for those who want refined style with minimalistic appeal. Limited edition release for bold Indian urbanites.</p>
-    <div class="price">₹7,000</div>
-    <button class="buy-btn" onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
-  </div>
-  <div class="product">
-    <h3>SKR-002 Black Flame</h3>
-    <p>Bold and striking, the Black Flame features a glossy jet-black upper contrasted by vivid red highlights. Lightweight and breathable, with reinforced durability for the city lifestyle. Designed for high performance and unmatched visual impact.</p>
-    <div class="price">₹6,500</div>
-    <button class="buy-btn" onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
-  </div>
-  <div class="product">
-    <h3>SKR-003 Street Steel</h3>
-    <p>Street Steel edition offers an urban grey aesthetic with rugged textures inspired by cityscapes. Enhanced padding and high-traction sole for everyday adventures. A limited drop for street culture enthusiasts and couples alike.</p>
-    <div class="price">₹12,000</div>
-    <button class="buy-btn" onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
-  </div>
-</section>
