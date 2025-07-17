@@ -1,8 +1,14 @@
-
+</html>
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skyron – India's exclusive limited-edition luxury shoe brand. Crafted in China, made for India. Bold, minimal, elite." />
+  <meta name="keywords" content="Skyron, luxury shoes India, limited edition sneakers, exclusive footwear, Indian luxury brand" />
+  <meta property="og:title" content="Skyron – Limited Edition Luxury Shoes" />
+  <meta property="og:description" content="India’s exclusive luxury shoes. Crafted in China, made for India." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dipu2007.github.io/Skyron-site" />
   <title>Skyron – Limited Edition Luxury Shoes</title>
   <style>
     body {
@@ -11,98 +17,121 @@
       background: #000;
       color: #fff;
       text-align: center;
-      overflow-x: hidden;
-    }header {
-  padding: 30px 10px 10px;
-  font-size: 36px;
-  font-weight: bold;
-  color: gold;
-  letter-spacing: 3px;
-  animation: fadeIn 2s ease-out;
-  text-shadow: 0 0 10px gold, 0 0 20px gold;
-}
-
-.tagline {
-  font-size: 18px;
-  color: #ccc;
-  margin-top: -10px;
-  animation: fadeIn 3s ease-out;
-}
-
-.animated-text, .coming-soon, .highlight {
-  margin-top: 30px;
-  font-size: 22px;
-  font-weight: 500;
-  animation: slideIn 2s ease-out;
-}
-
-.highlight {
-  font-style: italic;
-  color: #ffcc00;
-  animation: fadeIn 4s ease-out;
-}
-
-.countdown {
-  font-size: 26px;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #00ffcc;
-  animation: fadeIn 4s ease-in;
-}
-
-.whatsapp-button {
-  margin-top: 50px;
-  padding: 14px 28px;
-  background: gold;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  animation: fadeIn 3s ease-in-out;
-}
-
-.whatsapp-button:hover {
-  transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideIn {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
+    }
+    header {
+      padding: 40px 10px 10px;
+      font-size: 38px;
+      font-weight: bold;
+      color: gold;
+      letter-spacing: 4px;
+      text-shadow: 0 0 10px gold;
+      animation: fadeInGlow 2.5s ease-out forwards;
+    }
+    .tagline {
+      font-size: 16px;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #f0f0f0;
+      animation: slideUp 2s ease forwards;
+    }
+    .countdown {
+      font-size: 20px;
+      margin: 30px 0;
+      color: #ccc;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .product {
+      background: #111;
+      border-radius: 16px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+      color: #ffd700;
+    }
+    .product p { color: #aaa; }
+    .product button {
+      margin-top: 10px;
+      background: gold;
+      color: black;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .about {
+      margin: 40px auto;
+      max-width: 600px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 12px;
+      color: #666;
+      border-top: 1px solid #333;
+    }
+    @keyframes fadeInGlow {
+      from { opacity: 0; text-shadow: none; }
+      to { opacity: 1; text-shadow: 0 0 10px gold; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
   </style>
 </head>
-<body>  <header>SKYRON</header>
-  <div class="tagline">Dream. Dare. Deliver.</div>  <div class="animated-text">Only Limited Edition Drops</div>
-  <div class="highlight">Is this the future of Indian luxury?</div>  <div class="coming-soon">Next Drop Launching In:</div>
-  <div class="countdown" id="countdown">Loading...</div>  <button class="whatsapp-button" onclick="window.open('https://wa.me/918295914905?text=Hi%20Skyron%20Team%2C%20I%27m%20interested%20in%20your%20limited%20edition%20shoes!', '_blank')">
-    Order on WhatsApp
-  </button>  <script>
-    // Countdown Timer
-    const countdown = document.getElementById("countdown");
-    const launchDate = new Date("August 15, 2025 12:00:00").getTime();
-
+<body>
+  <header>SKYRON</header>
+  <div class="tagline">Dream. Dare. Deliver.</div>
+  <div class="highlight">Is this the future of Indian luxury?</div>
+  <div class="countdown" id="countdown"></div>  <section class="products">
+    <div class="product">
+      <h3>SKR-001 White Gold</h3>
+      <p>Minimal White with Gold Stitching</p>
+      <button onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
+    </div>
+    <div class="product">
+      <h3>SKR-002 Black Flame</h3>
+      <p>Glossy Black with Red Accents</p>
+      <button onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
+    </div>
+    <div class="product">
+      <h3>SKR-003 Street Steel</h3>
+      <p>Urban Grey Limited Drop</p>
+      <button onclick="location.href='https://wa.me/918295914905'">Order on WhatsApp</button>
+    </div>
+  </section>  <div class="about">
+    Crafted in China. Designed with elegance. Made for the bold generation of India. At Skyron, we don’t just sell shoes — we create statements. Our designs are exclusive, our drops are rare, and our vision is clear: India deserves its own global shoe icon.
+  </div>  <footer>
+    Skyron® 2025. All Rights Reserved. | Shipping & Returns | Contact via WhatsApp
+  </footer>  <script>
+    const countdownDate = new Date("Aug 15, 2025 00:00:00").getTime();
     const x = setInterval(function() {
       const now = new Date().getTime();
-      const distance = launchDate - now;
-
+      const distance = countdownDate - now;
+      const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = `Next Drop: ${d}d ${h}h ${m}m ${s}s`;
       if (distance < 0) {
         clearInterval(x);
-        countdown.innerHTML = "Now Live!";
-      } else {
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        document.getElementById("countdown").innerHTML = "Drop Live Now!";
       }
     }, 1000);
   </script></body>
