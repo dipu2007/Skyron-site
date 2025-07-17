@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,94 +12,83 @@
       color: #fff;
       text-align: center;
       overflow-x: hidden;
-    }
+    }header {
+  padding: 30px 10px 10px;
+  font-size: 36px;
+  font-weight: bold;
+  color: gold;
+  letter-spacing: 3px;
+  animation: fadeIn 2s ease-out;
+  text-shadow: 0 0 10px gold, 0 0 20px gold;
+}
 
-    header {
-      padding: 30px 10px 10px;
-      font-size: 36px;
-      font-weight: bold;
-      color: gold;
-      letter-spacing: 3px;
-      animation: fadeIn 2s ease-out;
-      text-shadow: 0 0 10px gold, 0 0 20px gold;
-    }
+.tagline {
+  font-size: 18px;
+  color: #ccc;
+  margin-top: -10px;
+  animation: fadeIn 3s ease-out;
+}
 
-    .tagline {
-      font-size: 18px;
-      color: #ccc;
-      margin-top: -10px;
-      animation: fadeIn 3s ease-out;
-    }
+.animated-text, .coming-soon, .highlight {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  animation: slideIn 2s ease-out;
+}
 
-    .animated-text, .coming-soon, .highlight {
-      margin-top: 30px;
-      font-size: 22px;
-      font-weight: 500;
-      animation: slideIn 2s ease-out;
-    }
+.highlight {
+  font-style: italic;
+  color: #ffcc00;
+  animation: fadeIn 4s ease-out;
+}
 
-    .highlight {
-      font-style: italic;
-      color: #ffcc00;
-      animation: fadeIn 4s ease-out;
-    }
+.countdown {
+  font-size: 26px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00ffcc;
+  animation: fadeIn 4s ease-in;
+}
 
-    .countdown {
-      font-size: 26px;
-      margin-top: 10px;
-      font-weight: bold;
-      color: #00ffcc;
-      animation: fadeIn 4s ease-in;
-    }
+.whatsapp-button {
+  margin-top: 50px;
+  padding: 14px 28px;
+  background: gold;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: fadeIn 3s ease-in-out;
+}
 
-    .whatsapp-button {
-      margin-top: 50px;
-      padding: 14px 28px;
-      background: gold;
-      color: black;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      animation: fadeIn 3s ease-in-out;
-    }
+.whatsapp-button:hover {
+  transform: scale(1.05);
+}
 
-    .whatsapp-button:hover {
-      transform: scale(1.05);
-    }
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
 
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(-20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
 
-    @keyframes slideIn {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
   </style>
 </head>
-<body>
-
-  <header>SKYRON</header>
-  <div class="tagline">Dream. Dare. Deliver.</div>
-
-  <div class="animated-text">Only Limited Edition Drops</div>
-  <div class="highlight">Is this the future of Indian luxury?</div>
-
-  <div class="coming-soon">Next Drop Launching In:</div>
-  <div class="countdown" id="countdown">Loading...</div>
-
-  <button class="whatsapp-button" onclick="window.open('https://wa.me/918295914905?text=Hi%20Skyron%20Team%2C%20I%27m%20interested%20in%20your%20limited%20edition%20shoes!', '_blank')">
+<body>  <header>SKYRON</header>
+  <div class="tagline">Dream. Dare. Deliver.</div>  <div class="animated-text">Only Limited Edition Drops</div>
+  <div class="highlight">Is this the future of Indian luxury?</div>  <div class="coming-soon">Next Drop Launching In:</div>
+  <div class="countdown" id="countdown">Loading...</div>  <button class="whatsapp-button" onclick="window.open('https://wa.me/918295914905?text=Hi%20Skyron%20Team%2C%20I%27m%20interested%20in%20your%20limited%20edition%20shoes!', '_blank')">
     Order on WhatsApp
-  </button>
-
-  <script>
+  </button>  <script>
     // Countdown Timer
     const countdown = document.getElementById("countdown");
-    const launchDate = new Date("August 15, 2025 12:00:00").getTime(); // Set launch date
+    const launchDate = new Date("August 15, 2025 12:00:00").getTime();
 
     const x = setInterval(function() {
       const now = new Date().getTime();
@@ -116,7 +105,5 @@
         countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
       }
     }, 1000);
-  </script>
-
-</body>
+  </script></body>
 </html>
