@@ -1,149 +1,117 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skyron – Crafted in China, Made for India</title>
-  <meta name="description" content="Skyron premium sneaker drops. Crafted in China, made for India. Countdown to the next limited release and join our wait-list." />
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pO8RO6XQ7Zb7zz+fm3fnfX8YUEBmfXs9X4gkxgKW2TiFqouBZhOiabuX41ZJLdnOjFkNdn+W3X3ENa+Xicr+kw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skyron – Limited Edition Luxury Shoes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid gold;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: gold;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 5px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #111, #1c1c1c);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    .coming-soon {
+      margin: 20px 0;
+      font-size: 1.3rem;
+      color: gold;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #25D366;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebc57;
+    }
+
+    .sneaker {
+      margin-top: 40px;
+      width: 80%;
+      max-width: 400px;
+      animation: float 3s ease-in-out infinite;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container flex items-center justify-between gap-16">
-      <a href="#home" class="brand-logo">Skyron</a>
-      <nav class="nav-links flex gap-16">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#products" class="nav-link">Products</a>
-        <a href="#about" class="nav-link">About Skyron</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="#comingsoon" class="nav-link highlight">Coming Soon</a>
-      </nav>
-    </div>
-  </header>  <!-- HERO SECTION -->  <section id="home" class="hero">
-    <div class="container center">
-      <h1 class="hero-title animate-text">Skyron</h1>
-      <h2 class="hero-tagline">Crafted in China, Made for India</h2>
-      <div class="coming-soon">
-        <p>Coming Soon</p>
-        <span id="countdown" class="countdown-timer"></span>
-      </div>
-      <a href="#products" class="cta-button">Explore Collection</a>
-      <div class="floating-sneakers">
-        <img src="images/sneaker1.webp" alt="Luxury Sneaker" class="sneaker-anim" />
-        <img src="images/sneaker2.webp" alt="Handcrafted Sneaker" class="sneaker-anim" />
-        <img src="images/sneaker3.webp" alt="Limited Edition Sneaker" class="sneaker-anim" />
-      </div>
-    </div>
-  </section>  <!-- PRODUCTS SECTION -->  <section id="products" class="products-section">
-    <div class="container">
-      <h2 class="section-title">Featured Collection</h2>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="images/venomx-ultra.webp" alt="VenomX Ultra" />
-          <h3>VenomX Ultra</h3>
-          <p>Ultra-light, triple-foam stacked midsole. Made to stun.</p>
-          <span class="price">₹10,400</span>
-        </div>
-        <div class="product-card">
-          <img src="images/stellar-prime.webp" alt="Stellar Prime" />
-          <h3>Stellar Prime</h3>
-          <p>Aerospace mesh, handcrafted finish, all-day luxury feel.</p>
-          <span class="price">₹16,800</span>
-        </div>
-        <div class="product-card">
-          <img src="images/aurora-blaze.webp" alt="Aurora Blaze" />
-          <h3>Aurora Blaze</h3>
-          <p>Glow-fade knit, signature Skyron grip.</p>
-          <span class="price">₹32,200</span>
-        </div>
-        <div class="product-card">
-          <img src="images/titanium-apex.webp" alt="Titanium Apex" />
-          <h3>Titanium Apex</h3>
-          <p>Limited drop, carbon insert, exclusive Indian edition.</p>
-          <span class="price">₹45,000</span>
-        </div>
-        <div class="product-card">
-          <img src="images/nebula-legacy.webp" alt="Nebula Legacy" />
-          <h3>Nebula Legacy</h3>
-          <p>3M accents, full-cushion, next-gen comfort.</p>
-          <span class="price">₹56,000</span>
-        </div>
-      </div>
-    </div>
-  </section>  <!-- ABOUT SKYRON -->  <section id="about" class="about-section">
-    <div class="container two-col">
-      <div>
-        <h2>Mission</h2>
-        <p>Empower Indian sneakerheads with world-class craftsmanship blended with local soul.</p>
-        <h2>Vision</h2>
-        <p>Lead Asia’s luxury streetwear revolution with bold design, ethical supply chains, and fearless community drops.</p>
-      </div>
-      <div>
-        <h2>Our Story</h2>
-        <p>
-          Born in 2025, Skyron fuses Chinese precision manufacturing with India’s cultural vibrance. Every pair is a tribute to creators who dream beyond borders.<br>
-          Crafted in China, Made for India.<br>
-          Premium drops priced ₹10,400 – ₹56,000
-        </p>
-      </div>
-    </div>
-  </section>  <!-- CONTACT US -->  <section id="contact" class="contact-section">
-    <div class="container contact-flex">
-      <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form>
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email (optional)" />
-          <textarea name="message" placeholder="Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-        <a href="https://wa.me/8295914905" class="whatsapp-btn" target="_blank">
-          <i class="fab fa-whatsapp"></i> WhatsApp Us
-        </a>
-      </div>
-      <div class="contact-info">
-        <h3>Email</h3>
-        <p>support@skyron.com</p>
-        <h3>Message Form</h3>
-        <p>Send us product inquiries or feedback directly through the form.</p>
-      </div>
-    </div>
-  </section>  <!-- COMING SOON -->  <section id="comingsoon" class="comingsoon-section">
-    <div class="container center">
-      <h2>Exclusive Sneaker Launches — Coming Soon</h2>
-      <div class="comingsoon-banner">
-        <p>Stay tuned! Limited drops & community releases are on the way.</p>
-        <span id="comingsoon-countdown" class="countdown-timer"></span>
-      </div>
-    </div>
-  </section>  <footer class="footer center">
-    <p>&copy; 2025 Skyron. Crafted in China, Made for India.</p>
-  </footer>  <script>
-    // Simple Countdown (set to 60 days from now)
-    function updateCountdown(id, daysAhead = 60) {
-      const countdownEl = document.getElementById(id);
-      const endDate = new Date();
-      endDate.setDate(endDate.getDate() + daysAhead);
+  <header>
+    <h1>SKYRON</h1>
+    <div class="tagline">Dream. Dare. Deliver.</div>
+  </header>
 
-      function tick() {
-        const now = new Date();
-        const diff = endDate - now;
-        if (diff <= 0) {
-          countdownEl.textContent = 'Launching Soon!';
-          return;
-        }
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const mins = Math.floor((diff / (1000 * 60)) % 60);
-        const secs = Math.floor((diff / 1000) % 60);
-        countdownEl.textContent = days + 'd ' + hours + 'h ' + mins + 'm ' + secs + 's';
-        requestAnimationFrame(tick);
-      }
-      tick();
-    }
-    updateCountdown('countdown');
-    updateCountdown('comingsoon-countdown', 90);
-  </script></body>
+  <section class="hero">
+    <h2>Limited Edition Luxury Shoes</h2>
+    <p>Crafted in China. Made for India.</p>
+    <div class="coming-soon">Launching Soon – Stay Tuned!</div>
+    <a class="whatsapp-btn" href="https://wa.me/918295914905" target="_blank">
+      Chat with Us on WhatsApp
+    </a>
+    <img class="sneaker" src="https://images.unsplash.com/photo-1606813903243-bb0cde6b5a11?auto=format&fit=crop&w=600&q=80" alt="Skyron Sneaker">
+  </section>
+
+  <footer>
+    &copy; 2025 Skyron. All rights reserved.
+  </footer>
+</body>
 </html>
