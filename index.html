@@ -38,7 +38,7 @@
 
     .about-section, .contact-section, .comingsoon-section, footer { padding:2rem 0; }
     .about-section h2, .contact-section h2, .comingsoon-section h2 { text-align:center; margin-bottom:1rem; font-size:1.8rem; }
-    .two-col { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; }
+    .about-section p { margin-bottom:1rem; color:#ddd; line-height:1.6; }
     .contact-form input, .contact-form textarea { width:100%; padding:0.6rem; margin-bottom:1rem; background:#333; color:#fff; border:none; border-radius:5px; }
     .contact-form button { background:#f9c600; color:#000; padding:0.6rem; border:none; border-radius:5px; cursor:pointer; }
 
@@ -68,108 +68,7 @@
     <div class="coming-soon">Coming Soon</div>
     <button class="cta-button" onclick="document.getElementById('products').scrollIntoView()">Explore Collection</button>
     <div class="floating-sneakers">
-      <img src="https://picsum.photos/seed/1/200/200" class="sneaker-anim" alt="">
-      <img src="https://picsum.photos/seed/2/200/200" class="sneaker-anim" alt="">
-      <img src="https://picsum.photos/seed/3/200/200" class="sneaker-anim" alt="">
-    </div>
-  </section>
-
-  <section id="products" class="products-section container">
-    <h2>Sneaker Collection</h2>
-    <div class="products-grid">
-      <!-- Example products -->
-      <div class="product-card">
-        <img src="https://picsum.photos/seed/a/300/200" alt="">
-        <h3>VenomX Ultra</h3>
-        <p>Ultra-light, triple-foam stacked midsole.</p>
-        <div class="price">₹10,400</div>
-      </div>
-      <div class="product-card">
-        <img src="https://picsum.photos/seed/b/300/200" alt="">
-        <h3>Stellar Prime</h3>
-        <p>Aerospace mesh, handcrafted finish.</p>
-        <div class="price">₹16,800</div>
-      </div>
-      <div class="product-card">
-        <img src="https://picsum.photos/seed/c/300/200" alt="">
-        <h3>Aurora Blaze</h3>
-        <p>Glow-fade knit, signature grip.</p>
-        <div class="price">₹32,200</div>
-      </div>
-    </div>
-  </section>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skyron – Crafted in China, Made for India</title>
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: sans-serif; background:#000; color:#fff; }
-    header { background:#111; padding:1rem; position:sticky; top:0; z-index:1000; }
-    .container { width:90%; max-width:1000px; margin:auto; }
-    .navbar { display:flex; justify-content:space-between; align-items:center; }
-    .nav-links a { color:#ccc; margin-left:1rem; text-decoration:none; }
-    .nav-links a:hover, .nav-links .highlight { color:#f9c600; font-weight:bold; }
-
-    .hero { text-align:center; padding:3rem 0; }
-    .hero h1 { font-size:2.5rem; color:#f9c600; letter-spacing:2px; }
-    .hero p { color:#aaa; margin-top:0.5rem; }
-    .coming-soon { margin:1rem 0; font-size:1.2rem; color:#f9c600; }
-    .cta-button { background:#f9c600; color:#000; padding:0.7rem 2rem; border:none; border-radius:5px; cursor:pointer; }
-
-    .floating-sneakers { display:flex; justify-content:center; gap:1rem; margin:2rem 0; }
-    .sneaker-anim { width:120px; animation:float 3s ease-in-out infinite; border-radius:10px; }
-
-    @keyframes float {
-      0%,100% { transform:translateY(0); }
-      50% { transform:translateY(-10px); }
-    }
-
-    .products-section { padding:3rem 0; background:#111; }
-    .products-section h2 { text-align:center; margin-bottom:1.5rem; font-size:2rem; }
-    .products-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
-    .product-card { background:#222; padding:1rem; border-radius:8px; text-align:center; }
-    .product-card img { width:100%; border-radius:5px; }
-    .product-card h3 { margin:0.8rem 0 0.4rem; font-size:1.1rem; }
-    .product-card p { font-size:0.9rem; color:#aaa; }
-    .price { margin-top:0.5rem; color:#f9c600; font-weight:bold; }
-
-    .about-section, .contact-section, .comingsoon-section, footer { padding:2rem 0; }
-    .about-section h2, .contact-section h2, .comingsoon-section h2 { text-align:center; margin-bottom:1rem; font-size:1.8rem; }
-    .two-col { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; }
-    .contact-form input, .contact-form textarea { width:100%; padding:0.6rem; margin-bottom:1rem; background:#333; color:#fff; border:none; border-radius:5px; }
-    .contact-form button { background:#f9c600; color:#000; padding:0.6rem; border:none; border-radius:5px; cursor:pointer; }
-
-    .whatsapp-btn { display:inline-block; margin-top:1rem; background:#25d366; color:#fff; padding:0.8rem 1.5rem; border-radius:30px; text-decoration:none; }
-    .whatsapp-btn i { margin-right:0.5rem; }
-
-    footer { background:#000; text-align:center; font-size:0.9rem; color:#666; }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container navbar">
-      <div class="brand">Skyron</div>
-      <nav class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#comingsoon" class="highlight">Coming Soon</a>
-      </nav>
-    </div>
-  </header>
-
-  <section id="home" class="hero container">
-    <h1>Skyron</h1>
-    <p>Crafted in China, Made for India</p>
-    <div class="coming-soon">Coming Soon</div>
-    <button class="cta-button" onclick="document.getElementById('products').scrollIntoView()">Explore Collection</button>
-    <div class="floating-sneakers">
-      <img src="https://picsum.photos/seed/1/200/200" class="sneaker-anim" alt="">
+      <img src="https://via.placeholder.com/260x340?text=Skyron+001" class="sneaker-anim" alt="">
       <img src="https://picsum.photos/seed/2/200/200" class="sneaker-anim" alt="">
       <img src="https://picsum.photos/seed/3/200/200" class="sneaker-anim" alt="">
     </div>
@@ -201,28 +100,9 @@
 
   <section id="about" class="about-section container">
     <h2>About Skyron</h2>
-    <div class="two-col">
-      <div>
-        <h3>Who We Are</h3>
-        <p>Skyron is an exclusive Indian luxury footwear brand that blends Chinese craftsmanship with Indian creativity. Every pair is part of a limited drop — no repeats, no compromises.</p>
-
-        <h3>Our Mission</h3>
-        <p>To redefine luxury sneakers in India by delivering premium, limited-edition styles directly to passionate sneaker lovers — without the insane markups.</p>
-
-        <h3>Crafted in China</h3>
-        <p>We source from the same regions that manufacture for global brands — ensuring unmatched quality, comfort, and style at every step.</p>
-      </div>
-      <div>
-        <h3>Made for India</h3>
-        <p>Each design reflects Indian soul — bold, expressive, and global. From packaging to style drops, everything is curated for a new generation of Indian creators, artists, and sneakerheads.</p>
-
-        <h3>Our Promise</h3>
-        <p>Only 50 to 100 pairs per style. Every customer receives a collector card with their edition number and an experience that feels personal and premium.</p>
-
-        <h3>Future Vision</h3>
-        <p>Skyron aims to be the Indian face of street-luxury, with collaborations, community drops, and product stories that break borders.</p>
-      </div>
-    </div>
+    <p><strong>Skyron</strong> is a limited-edition sneaker brand proudly founded in India, combining precision Chinese craftsmanship with bold Indian street culture. Our goal is to deliver collectible-quality sneakers that spark confidence and stand apart in a world full of copycats.</p>
+    <p>Each drop is released in strictly limited numbers — sometimes just 50 to 100 pairs — so you always wear something rare. From our aggressive design silhouettes to packaging that feels premium, everything is built for sneaker lovers who value quality over quantity.</p>
+    <p>Skyron is not just about shoes. It’s about voice. It’s about representing Indian youth who want to move different. Dream global. And wear loud.</p>
   </section>
 
   <section id="contact" class="contact-section container">
