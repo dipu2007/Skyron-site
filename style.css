@@ -1,39 +1,224 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    color: #111;
-    text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #232323;
+  line-height: 1.6;
 }
+
 header {
-    background: #000;
-    color: gold;
-    padding: 20px 10px;
+  background: #131313;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-.slogan {
-    font-size: 1.2rem;
-    color: #ccc;
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.navbar h1 {
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a.active,
+nav a:hover {
+  border-bottom: 2px solid #22a6b3;
+  color: #22a6b3;
+}
+
 .hero {
-    padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9f8fc;
+  padding: 3rem 8%;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px #c4e7f2;
 }
-.hero img {
-    width: 250px;
-    border-radius: 10px;
+
+.hero-text {
+  flex: 1 1 50%;
 }
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: gold;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 25px;
+
+.hero-image img {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #abdcf1;
 }
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #22a6b3;
+  color: #fff;
+  padding: 0.9rem 2.3rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.cta-btn:hover {
+  background: #0984e3;
+}
+
+.features {
+  width: 90%;
+  margin: 3rem auto 0;
+}
+.features ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.features li {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #c4e7f2;
+  flex: 1 1 200px;
+  list-style: none;
+  color: #222a3f;
+}
+
+.models-preview {
+  width: 90%;
+  margin: 3rem auto;
+}
+.product-grid {
+  display: flex;
+  gap: 2.3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px #bedff6;
+  text-align: center;
+  width: 250px;
+}
+.product-card img {
+  width: 170px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.product-card h4 {
+  margin: 0.7rem 0 0.3rem 0;
+  font-size: 1.13rem;
+  letter-spacing: 0.5px;
+}
+.product-card p {
+  font-size: 0.98rem;
+  color: #444;
+}
+.product-card span {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: #22a6b3;
+  font-weight: 700;
+}
+
 footer {
-    background-color: #000;
-    color: #fff;
-    padding: 15px 10px;
-    font-size: 0.9rem;
+  margin-top: 4rem;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.1rem 0 0.7rem 0;
+  font-size: 1rem;
 }
+
+.catalog {
+  width: 92%;
+  margin: 3rem auto 0;
+}
+.catalog-grid {
+  display: flex;
+  gap: 2.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalog-item {
+  background: #fff;
+  padding: 2rem 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px #d2e4ec;
+  text-align: center;
+  width: 310px;
+  margin-bottom: 2.5rem;
+}
+.catalog-item img {
+  width: 200px;
+  border-radius: 10px;
+}
+.catalog-item h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  margin: 1.1rem 0 0.5rem 0;
+}
+.catalog-item ul {
+  margin-top: 0.7rem;
+  text-align: left;
+}
+.catalog-item li {
+  margin-bottom: 0.55rem;
+  font-size: 1rem;
+  color: #232323;
+}
+.price {
+  color: #222a3f;
+  font-weight: bold;
+}
+
+.about,
+.contact {
+  width: 92%;
+  margin: 3rem auto 0;
+  background: #f5fcff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px #d4e1eb;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 3%;
+  }
+  .features ul,
+  .product-grid,
+  .catalog-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+  }
+  .product-card, .catalog-item {
+    width: 90vw;
+  }
+}
+
