@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skyron – Crafted in China, Made for India</title>
+  <title>Skyron Footwear – Crafted in China, Made for India</title>
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     body { font-family: sans-serif; background:#000; color:#fff; }
@@ -21,34 +21,53 @@
 
     .floating-sneakers { display:flex; justify-content:center; gap:1rem; margin:2rem 0; }
     .sneaker-anim { width:120px; animation:float 3s ease-in-out infinite; border-radius:10px; }
-
     @keyframes float {
       0%,100% { transform:translateY(0); }
       50% { transform:translateY(-10px); }
     }
 
     .products-section { padding:3rem 0; background:#111; }
-    .products-section h2 { text-align:center; margin-bottom:1.5rem; font-size:2rem; }
+    .products-section h2 { text-align:center; margin-bottom:1.5rem; font-size:2rem; color:#f9c600; }
     .products-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
     .product-card { background:#222; padding:1rem; border-radius:8px; text-align:center; }
     .product-card img { width:100%; border-radius:5px; }
-    .product-card h3 { margin:0.8rem 0 0.4rem; font-size:1.1rem; }
+    .product-card h3 { margin:0.8rem 0 0.4rem; font-size:1.1rem; color:#f9c600; }
     .product-card p { font-size:0.9rem; color:#aaa; }
     .price { margin-top:0.5rem; color:#f9c600; font-weight:bold; }
 
+    .shoes { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; padding:3rem 0; background:#111; }
+    .shoe-card { background:#222; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.5); }
+    .shoe-card img { width:100%; display:block; }
+    .shoe-card .info { padding:15px; color:#ddd; }
+    .shoe-card h2 { margin-bottom:10px; font-size:1.4em; color:#f9c600; }
+    .shoe-card ul { list-style:disc inside; }
+    .shoe-card li { margin-bottom:6px; }
+
+    .founder, .preorder { padding:2rem 1rem; background:#111; border-radius:8px; margin:2rem 0; box-shadow:0 2px 8px rgba(0,0,0,0.5); }
+    .founder h2, .preorder h2 { font-size:1.8rem; color:#f9c600; margin-bottom:1rem; text-align:center; }
+    .founder p, .preorder p { color:#ddd; line-height:1.6; margin-bottom:1rem; }
+    .founder ul { margin-left:1.5rem; color:#ddd; }
+    .founder li { margin-bottom:8px; }
+    .preorder { text-align:center; }
+    .preorder .btn { display:inline-block; padding:0.8rem 2rem; background:#f9c600; color:#000; text-decoration:none; border-radius:5px; transition:background 0.3s; }
+    .preorder .btn:hover { background:#cca600; }
+
     .about-section, .contact-section, .comingsoon-section, footer { padding:2rem 0; }
-    .about-section h2, .contact-section h2, .comingsoon-section h2 { text-align:center; margin-bottom:1rem; font-size:1.8rem; }
-    .about-section p { margin-bottom:1rem; color:#ddd; line-height:1.6; }
+    .about-section h2, .contact-section h2, .comingsoon-section h2 { text-align:center; margin-bottom:1rem; font-size:1.8rem; color:#f9c600; }
+    .about-section p { color:#ddd; line-height:1.6; margin-bottom:1rem; }
     .contact-form input, .contact-form textarea { width:100%; padding:0.6rem; margin-bottom:1rem; background:#333; color:#fff; border:none; border-radius:5px; }
     .contact-form button { background:#f9c600; color:#000; padding:0.6rem; border:none; border-radius:5px; cursor:pointer; }
-
-    .whatsapp-btn { display:inline-block; margin-top:1rem; background:#25d366; color:#fff; padding:0.8rem 1.5rem; border-radius:30px; text-decoration:none; }
+    .whatsapp-btn { display:inline-block; background:#25d366; color:#fff; padding:0.8rem 1.5rem; border-radius:30px; text-decoration:none; margin-top:1rem; }
     .whatsapp-btn i { margin-right:0.5rem; }
-
     footer { background:#000; text-align:center; font-size:0.9rem; color:#666; }
+    @media (max-width:660px) {
+      .container { width:95%; }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Header & Navbar -->
   <header>
     <div class="container navbar">
       <div class="brand">Skyron</div>
@@ -62,6 +81,7 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section id="home" class="hero container">
     <h1>Skyron</h1>
     <p>Crafted in China, Made for India</p>
@@ -74,6 +94,7 @@
     </div>
   </section>
 
+  <!-- Existing Sneaker Collection -->
   <section id="products" class="products-section container">
     <h2>Sneaker Collection</h2>
     <div class="products-grid">
@@ -98,6 +119,71 @@
     </div>
   </section>
 
+  <!-- Futuristic Shoes Gallery -->
+  <section class="shoes container">
+    <div class="shoe-card">
+      <img src="1000028203.jpg" alt="Luna Glide">
+      <div class="info">
+        <h2>Luna Glide</h2>
+        <ul>
+          <li>Soft grey premium leather upper</li>
+          <li>Integrated glowing midsole for low-light visibility</li>
+          <li>Hidden zip closure with magnetic strap</li>
+          <li>Rechargeable LED panel with 10+ hour battery</li>
+        </ul>
+      </div>
+    </div>
+    <div class="shoe-card">
+      <img src="1000028202.jpg" alt="Nova Flux">
+      <div class="info">
+        <h2>Nova Flux</h2>
+        <ul>
+          <li>Thermochromic color-changing material</li>
+          <li>Glowing kinetic energy stripes</li>
+          <li>Embedded NFC chip for authenticity & smart pairing</li>
+          <li>Limited edition serial number plate</li>
+        </ul>
+      </div>
+    </div>
+    <div class="shoe-card">
+      <img src="1000028201.jpg" alt="Eclipse Runner">
+      <div class="info">
+        <h2>Eclipse Runner</h2>
+        <ul>
+          <li>Sleek matte black knit upper</li>
+          <li>Discrete “R” indicator LED on strap</li>
+          <li>Self-lacing system with pressure sensors</li>
+          <li>Energy-return sole with embedded LED glow</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+  <section class="founder container">
+    <h2>Meet the Founder: Deepak P. Behera</h2>
+    <p>
+      Deepak P. Behera is the visionary behind Skyron Footwear, blending innovation and futuristic design from his hometown in Farukh Nagar, Haryana. With a passion for wearable technology and creative comfort, Deepak:
+    </p>
+    <ul>
+      <li>Crafted his first prototypes by hand in 2018</li>
+      <li>Collaborated with material scientists on thermochromic and kinetic energy technologies</li>
+      <li>Secured multiple patents on smart-footwear innovations</li>
+      <li>Hosts community-driven design hackathons across India</li>
+    </ul>
+    <p>
+      Through his blog and live Q&A sessions, Deepak inspires the next generation of footwear entrepreneurs.
+    </p>
+  </section>
+
+  <!-- Pre-Order Section -->
+  <section class="preorder container">
+    <h2>Pre-Order Starts Soon!</h2>
+    <p>Reserve your pair today and be among the first to step into the future of footwear.</p>
+    <a href="#contact" class="btn">Notify Me</a>
+  </section>
+
+  <!-- About Section -->
   <section id="about" class="about-section container">
     <h2>About Skyron</h2>
     <p><strong>Skyron</strong> is a limited-edition sneaker brand proudly founded in India, combining precision Chinese craftsmanship with bold Indian street culture. Our goal is to deliver collectible-quality sneakers that spark confidence and stand apart in a world full of copycats.</p>
@@ -105,6 +191,7 @@
     <p>Skyron is not just about shoes. It’s about voice. It’s about representing Indian youth who want to move different. Dream global. And wear loud.</p>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="contact-section container">
     <h2>Contact Us</h2>
     <div class="contact-form">
@@ -116,13 +203,15 @@
     </div>
   </section>
 
+  <!-- Coming Soon Section -->
   <section id="comingsoon" class="comingsoon-section container">
     <h2>Limited Drops Arrive Soon</h2>
     <p class="coming-soon">Stay tuned! Exclusive releases coming up.</p>
   </section>
 
   <footer>
-    &copy; 2025 Skyron. All rights reserved.
+    &copy; 2025 Skyron Footwear. All rights reserved.
   </footer>
+
 </body>
 </html>
