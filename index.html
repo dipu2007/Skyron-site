@@ -8,85 +8,70 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e0e;
-      color: #f2f2f2;
+      background-color: black;
+      color: white;
     }
-
     header {
-      background-color: #000;
-      padding: 60px 20px;
       text-align: center;
+      padding: 40px 20px;
     }
-
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
-      letter-spacing: 2px;
     }
-
     header p {
       font-size: 1.2rem;
       color: #bbb;
     }
-
-    .section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
+    .main {
+      padding: 30px 20px;
       text-align: center;
     }
-
-    .section h2 {
+    .main h2 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #fff;
     }
-
-    .section p {
-      font-size: 1.1rem;
-      color: #ccc;
+    .main p {
+      max-width: 700px;
+      margin: auto;
       line-height: 1.6;
+      color: #ccc;
     }
-
     .products {
+      padding: 40px 20px;
+      background-color: #111;
+      text-align: center;
+    }
+    .products h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      margin-top: 40px;
     }
-
-    .product-box {
-      background-color: #1a1a1a;
-      border-radius: 12px;
+    .product-card {
+      background: #1a1a1a;
       padding: 20px;
-      width: 280px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      border-radius: 16px;
+      width: 260px;
     }
-
-    .product-box img {
+    .product-card img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 8px;
     }
-
-    .product-box p {
-      margin-top: 12px;
-      font-size: 0.95rem;
-      color: #aaa;
+    .product-card p {
+      color: #ccc;
+      margin-top: 10px;
     }
-
     footer {
-      background-color: #111;
-      color: #777;
-      padding: 20px;
+      background-color: #000;
+      color: #888;
       text-align: center;
+      padding: 20px;
       font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
     }
   </style>
 </head>
@@ -94,34 +79,36 @@
 
   <header>
     <h1>Skyron</h1>
-    <p>India’s First Limited-Edition Luxury Shoe Brand</p>
+    <p>India’s First Limited Edition Luxury Shoe Brand</p>
   </header>
 
-  <section class="section">
+  <section class="main">
     <h2>About Skyron</h2>
-    <p>Skyron creates luxury footwear without loud logos — just timeless design, premium quality, and true exclusivity. Each pair is numbered and released in limited quantity, with a collector card inside every box to prove it's 1st edition. This is not just footwear. It's legacy.</p>
+    <p>
+      Skyron is India’s first limited-edition luxury shoe brand, focused on timeless design, elite craftsmanship, and exclusivity. Every pair is part of a hand-numbered series, without logos — just clean lines and powerful presence. We create for connoisseurs who believe in legacy over trend.
+    </p>
   </section>
 
-  <section class="section">
-    <h2>Featured Styles</h2>
-    <div class="products">
-      <div class="product-box">
-        <img src="https://via.placeholder.com/280x360?text=Skyron+001" alt="Skyron 001">
-        <p>Skyron 001 – Suede Midnight</p>
+  <section class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/260x340?text=Skyron+001" alt="Skyron Shoe 001">
+        <p>Skyron 001 – Midnight Suede</p>
       </div>
-      <div class="product-box">
-        <img src="https://via.placeholder.com/280x360?text=Skyron+002" alt="Skyron 002">
-        <p>Skyron 002 – Classic Bone White</p>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/260x340?text=Skyron+002" alt="Skyron Shoe 002">
+        <p>Skyron 002 – Bone White</p>
       </div>
-      <div class="product-box">
-        <img src="https://via.placeholder.com/280x360?text=Skyron+003" alt="Skyron 003">
-        <p>Skyron 003 – Charcoal Street</p>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/260x340?text=Skyron+003" alt="Skyron Shoe 003">
+        <p>Skyron 003 – Carbon Leather</p>
       </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Skyron. All Rights Reserved. | Limited Edition. Made for Legacy.
+    &copy; 2025 Skyron. Crafted with legacy in mind.
   </footer>
 
 </body>
